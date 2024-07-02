@@ -26,6 +26,6 @@ O primeiro comando recebe as atualizações mais recentes do repositório remoto
 > - As atividades serão realizadas com o GitHub Classroom e podem ser acessadas pelos links nas descrições das atividades.
 > - Link da sala de aula para a disciplina de Testes: https://classroom.github.com/classrooms/101579917-webacademy-ufac-classroom-testes-t5
 
-1. [INDIVIDUAL] Criar uma classe de testes com JUnit para um método de outra classe Java capaz transformar um número em algarismo romano (no formato string) para um inteiro no sistema decimal (até o valor 4000). (Entrega: 02/07/2024)
+1. [INDIVIDUAL] Criar uma classe de testes com JUnit para um método de outra classe Java capaz transformar um número em algarismo romano (no formato string) para um inteiro no sistema decimal (até o valor 4000). (Entrega: 02/07/2024). Link da atividade: https://classroom.github.com/a/Rei43Rux
 
     - Os testes devem incluir algarismos com apenas um algarismo, com algarismos iguais, com algarismos diferenes, com algarismos de notação subtrativa (ex: IV, IX, XIV) e com algarismos inválidos.
