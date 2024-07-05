@@ -50,9 +50,13 @@ public class AtendimentoServiceTest {
 
     @Test
     public void testAtendimentoDelete() {
-        Mockito.doNothing().when(repo).deleteById(1L);
-        repo.deleteById(1L);
-        Mockito.verify(repo, Mockito.times(1)).deleteById(1L);
+        // Mockito.doNothing().when(repo).deleteById(1L);
+        // repo.deleteById(1L);
+        // Mockito.verify(repo, Mockito.times(1)).deleteById(1L);
+        Mockito.when(repo.findById(1L)).thenReturn(Optional.of(a1));
+        assertEquals(EStatus.AGENDADO, a1.getStatus());
+        servico.delete(1L);
+        assertEquals(EStatus.CANCELADO, a1.getStatus());
     }
 
     @Test
@@ -65,12 +69,18 @@ public class AtendimentoServiceTest {
 
     @Test
     void testAtendimentoGetById() {
-        // Tarefa de Casa
+        Mockito.when(repo.findById(1L)).thenReturn(Optional.of(a1));
+        Atendimento result = servico.get(1L);
+        assertEquals(1L, result.getId());
     }
 
     @Test
     void testAtendimentoGetTermoBusca() {
-        // Tarefa de Casa
+        Mockito.when(repo.busca("termo")).thenReturn(atendimentos);
+        List<Atendimento> result = servico.get("termo");
+        assertEquals(2, result.size());
+        assertEquals(1, result.get(0).getId());
+        assertEquals(2, result.get(1).getId());
     }
 
     @Test
@@ -87,7 +97,9 @@ public class AtendimentoServiceTest {
 
     @Test
     void testAtendimentoSave() {
-        // Tarefa para casa
+        Mockito.when(repo.save(a1)).thenReturn(a1);
+        Atendimento result = servico.save(a1);
+        assertEquals(1L, result.getId());
     }
 
     @Test
