@@ -19,6 +19,37 @@ git reset --hard origin/main
 O primeiro comando recebe as atualizações mais recentes do repositório remoto, e o segundo descarta todas as alterações locais e atualiza com o histórico mais recente do repositório remoto (branch main).
 
 
+## Como inciar a aplicação
+
+### Back-end
+
+```console
+cd sgcmapi
+mvn package
+java -jar target\sgcmapi.jar
+```
+
+Ou
+
+```console
+cd sgcmapi
+mvn spring-boot:run
+```
+
+A aplicação vai iniciar no endereço <https://localhost:9000>, com acesso local a base de dados MySQL, por meio da porta padrão 3306, além de usuário e senha "root".
+
+### Front-end
+
+Para iniciar a aplicação, é necessário também instalar as dependências do projeto.
+
+```console
+cd sgcmapp
+npm install
+ng serve
+```
+
+A aplicação vai iniciar no endereço <https://localhost:4200>.
+
 ## Atividades práticas
 
 > [!IMPORTANT]
