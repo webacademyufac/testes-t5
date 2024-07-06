@@ -62,3 +62,10 @@ A aplicação vai iniciar no endereço <https://localhost:4200>.
     - Os testes devem incluir algarismos com apenas um algarismo, com algarismos iguais, com algarismos diferenes, com algarismos de notação subtrativa (ex: IV, IX, XIV) e com algarismos inválidos.
 
 2. [INDIVIDUAL] Criar métodos de teste para três métodos da camada de serviço (getAtendimentoById, getAtendimentoTermoBusca e getAtendimentoSave). (Entrega: 04/07/2024). Link da atividade: https://classroom.github.com/a/fCPS5BKN
+
+3. [INDIVIDUAL] Criar métodos de testes integrados para classe de AtendimentoController (ById, TermoBusca, Insert, Update, Delete, UpdateStatus, GetHorarios) e AtendimentoRepository (BuscaPaciente, BuscaConvenio, BuscaUnidade, BuscaEspecialidade, BuscaProfissionalDataStaus). (Entrega: 08/07/2024). Link da atividade: https://classroom.github.com/a/ZB3y_PQJ
+
+4. [GRUPO] Criar testes para o projeto back-end. (Entrega: 09/07/2024). Link da atividade: https://classroom.github.com/a/BmYivnuZ
+
+    - **Back-end**: criar testes de unidade e integração até alcançar o máximo de cobertura de código.
+    
