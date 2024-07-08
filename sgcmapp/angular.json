@@ -97,13 +97,49 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "karmaConfig": "karma.conf.js"
+          }
+        },
+        "cypress-run": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "devServerTarget": "sgcmapp:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "sgcmapp:serve:production"
+            }
+          }
+        },
+        "cypress-open": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "watch": true,
+            "headless": false
+          }
+        },
+        "e2e": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "devServerTarget": "sgcmapp:serve",
+            "watch": true,
+            "headless": false
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "sgcmapp:serve:production"
+            }
           }
         }
       }
     }
   },
   "cli": {
-    "analytics": "2aed9dde-60dc-4771-a448-4eb4450bd137"
+    "analytics": "2aed9dde-60dc-4771-a448-4eb4450bd137",
+    "schematicCollections": [
+      "@cypress/schematic",
+      "@schematics/angular"
+    ]
   }
 }
