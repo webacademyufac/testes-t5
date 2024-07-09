@@ -69,3 +69,6 @@ A aplicação vai iniciar no endereço <https://localhost:4200>.
 
     - **Back-end**: criar testes de unidade e integração até alcançar o máximo de cobertura de código.
     
+5. [GRUPO] Criar testes para o projeto front-end. (Entrega: 10/07/2024). Link da atividade: https://classroom.github.com/a/1ZwC-2Fj
+
+    - **Front-end**: criar testes E2E para validar a funcionalidade de salvar registros nas demais entidades gerenciadas pelo sistema (pacientes, profisisonais, convênios, especialidades, unidades e usuários), de forma semelhante ao teste criado para o agendamento de consultas.
